@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BazeDeDate1</string>
+    <string name="nume">Nume</string>
+    <string name="functie">Functie</string>
+    <string name="error1">Adauga nume</string>
+    <string name="error2">Adauga functie</string>
+</resources>
