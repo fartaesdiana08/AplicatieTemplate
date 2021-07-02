@@ -60,6 +60,10 @@
             android:text="standard" />
 </RadioGroup>
 
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pret timbru"/>
 <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
