@@ -60,6 +60,11 @@
             android:text="standard" />
 </RadioGroup>
 
+<Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/action_bar_spinner"/>
+
 <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
