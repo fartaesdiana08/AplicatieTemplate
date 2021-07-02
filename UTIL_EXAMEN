@@ -1,0 +1,39 @@
+string.xml
+
+<string-array name="culoare">
+    <item>Rosu</item>
+    <item>Negru</item>
+    <item>Verde</item>
+    <item>Albastru</item>
+</string-array>
+
+AdaugaObiectActivity.java
+
+//intent
+        Timbru timbru = new Timbru(txt_denumire, txt_calitate, txt_pret, txt_categorie, txt_data_achiz, txt_culoare);
+        Intent intent = new Intent();
+        intent.putExtra(ADD_TIMBRU, timbru);
+        setResult(RESULT_OK, intent);
+        finish();
+        
+//setOnCLickListener
+
+String txt_denumire=denumire.getText().toString();
+
+int txt_calitate=Integer.parseInt(calitate.getText().toString());
+
+Double nrKm = Double.parseDouble(editTextKm.getText().toString());
+
+int txt_pret=pret.getProgress();
+
+radioGroup:
+radioButton=findViewById(radioGroup.getCheckedRadioButtonId());
+String txt_categorie=radioButton.getText().toString();
+
+int txt_data_achiz=data_achizitie.getMonth();
+
+int txt_ora = timePickerOra.getHour();
+
+spinner: 
+String txt_culoare=culoare.getSelectedItem().toString().toLowerCase();
+int txt_pret=Integer.parseInt(pret.getSelectedItem().toString().toLowerCase());
